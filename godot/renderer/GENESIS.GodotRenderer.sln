@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GENESIS.GodotRenderer", "GENESIS.GodotRenderer.csproj", "{DD99F6C9-689C-460B-8FF7-856B4E3D769D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{DD99F6C9-689C-460B-8FF7-856B4E3D769D}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

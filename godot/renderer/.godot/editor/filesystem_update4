@@ -1,0 +1,5 @@
+res://default_scene.tscn
+res://DefaultScene.cs
+res://Visualisations/n_body_simulation_viewer.tscn
+res://Visualisations/NBodySimulationViewer.cs
+res://Nodes/OrbitCamera3D.cs

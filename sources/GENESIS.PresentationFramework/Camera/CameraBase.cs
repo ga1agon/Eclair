@@ -12,13 +12,14 @@ namespace GENESIS.PresentationFramework.Camera {
 		public Matrix4x4 InverseProjectionMatrix { get; protected set; }
 		public Matrix4x4 InverseViewMatrix { get; protected set; }
 
+		private float _fieldOfView = 1;
 		public float FieldOfView {
-			get => field;
+			get => _fieldOfView;
 			set {
-				field = value;
+				_fieldOfView = value;
 				RecalculateProjectionMatrix();
 			}
-		} = 1;
+		}
 		
 		protected float Width { get; private set; }
 		protected float Height { get; private set; }

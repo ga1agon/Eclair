@@ -1,3 +1,4 @@
+using System.Drawing;
 using GENESIS.GPU.OpenGL;
 using Silk.NET.Input;
 using Silk.NET.Maths;
@@ -21,6 +22,8 @@ namespace GENESIS.GPU {
 			get => (uint) Base.FramebufferSize.Y;
 			set => Base.Size = new Vector2D<int>(Base.Size.X, (int) value);
 		}
+		
+		public Color ClearColor { get; set; } = Color.Black;
 		
 		public IInputContext? Input { get; protected set; }
 		

@@ -490,6 +490,7 @@ $RECYCLE.BIN/
 
 # Godot
 */.godot/
+*/.idea/
 
 # To delete
 planetes/

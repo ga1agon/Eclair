@@ -1,0 +1,18 @@
+<Project Sdk="Godot.NET.Sdk/4.4.1">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSourceLink>false</EnableSourceLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\sources\GENESIS.PresentationFramework\GENESIS.PresentationFramework.csproj" />
+    <ProjectReference Include="..\..\sources\GENESIS.Simulation\GENESIS.Simulation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default_scene.tscn" />
+  </ItemGroup>
+</Project>

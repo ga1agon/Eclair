@@ -18,12 +18,13 @@ namespace GENESIS.GPU.Vulkan {
 		public Vk API { get; set; }
 		public Instance VK { get; private set; }
 
+		private VulkanDevice? _primaryDevice;
 		public VulkanDevice? PrimaryDevice {
-			get;
+			get => _primaryDevice;
 			set {
 				Debug.Assert(value != null);
 				
-				field = value;
+				_primaryDevice = value;
 				_logger.Info("Primary device is now {DeviceName}", value.Name);
 			}
 		}

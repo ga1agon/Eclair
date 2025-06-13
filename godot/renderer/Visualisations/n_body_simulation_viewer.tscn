@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn1x84xijhdca"]
+
+[ext_resource type="Script" uid="uid://cbtdrcgljqjqm" path="res://Visualisations/NBodySimulationViewer.cs" id="1_pmboc"]
+[ext_resource type="Script" uid="uid://cpsjmbcb0d0gu" path="res://Nodes/OrbitCamera3D.cs" id="2_nwm4b"]
+
+[node name="NBodySimulationViewer" type="Node3D"]
+script = ExtResource("1_pmboc")
+
+[node name="CameraGizmo" type="Node3D" parent="."]
+
+[node name="OrbitCamera3D" type="Camera3D" parent="CameraGizmo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+script = ExtResource("2_nwm4b")
+metadata/_custom_type_script = "uid://cpsjmbcb0d0gu"

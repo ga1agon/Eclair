@@ -52,7 +52,7 @@
 					# dotnet = (with pkgs.dotnetCorePackages; combinePackages [
 					# 	sdk_9_0-bin
 					# ]);
-					dotnet = pkgs.dotnetCorePackages.sdk_9_0_2xx;
+					dotnet = pkgs.dotnetCorePackages.sdk_8_0-bin;
 
 					nativeBuildInputs = with pkgs; [
 						dotnet

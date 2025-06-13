@@ -2,17 +2,27 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\godot\renderer\GENESIS.GodotRenderer.csproj" />
     <ProjectReference Include="..\GENESIS.GPU\GENESIS.GPU.csproj" />
     <ProjectReference Include="..\GENESIS.PresentationFramework\GENESIS.PresentationFramework.csproj" />
     <ProjectReference Include="..\GENESIS.Simulation\GENESIS.Simulation.csproj" />
   </ItemGroup>
+
+  <Target Name="CopyOutputToGodot" AfterTargets="Build">
+    <ItemGroup>
+      <AllOutputs Include="$(OutputPath)**\*" />
+    </ItemGroup>
+    <Copy
+      SourceFiles="@(AllOutputs)"
+      DestinationFolder="..\..\godot\renderer\.godot\mono\temp\bin\Debug\" />
+  </Target>
 
   <ItemGroup>
     <None Update="nlog.config">
