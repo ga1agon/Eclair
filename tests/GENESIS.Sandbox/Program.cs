@@ -1,3 +1,3 @@
 using GENESIS.Sandbox;
 
-TextureTestProgram.Start(args);
+OrbitDemoProgram.Start(args);

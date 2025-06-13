@@ -7,12 +7,12 @@ namespace GENESIS.GPU {
 	public struct Vertex() {
 		
 		[FieldOffset(0)] public Vector3 Position;
+		//[FieldOffset(16)] public Vector4 Color = Vector4.One;
 		[FieldOffset(16)] public Vector3 Normal = Vector3.Zero;
-		[FieldOffset(32)] public Vector2 TexCoords = Vector2.Zero;
-		[FieldOffset(40)] public Vector2 _padding0 = Vector2.Zero;
+		[FieldOffset(28)] private float _padding0 = 0;
 
 		public override string ToString() {
-			return $"[Position={Position}, Normal={Normal}, TexCoords={TexCoords}]";
+			return $"[Position={Position}, Normal={Normal}]";
 		}
 	}
 }

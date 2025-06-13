@@ -11,8 +11,7 @@ namespace GENESIS.PresentationFramework.Drawing {
 
 		public List<Vertex> Vertices = [];
 		//public List<uint> ObjectIndices = [];
-		public List<Material> Materials = [];
-		public List<ulong> Textures = [];
+		public List<Vector4> Colors = [];
 		public List<Matrix4x4> Matrices = [];
 
 		public ShapeType Type { get; }
